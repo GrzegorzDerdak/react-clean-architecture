@@ -1,0 +1,10 @@
+fragment BaseProduct on Product {
+  id
+  slug
+  name
+  created
+  description
+  thumbnail {
+    ...Image
+  }
+}

@@ -1,0 +1,23 @@
+query Products(
+  $first: Int = 10
+  $channel: String
+  $search: String
+  $filter: ProductFilterInput
+  $sortBy: ProductOrder
+  $where: ProductWhereInput
+) {
+  products(
+    first: $first
+    channel: $channel
+    sortBy: $sortBy
+    search: $search
+    filter: $filter
+    where: $where
+  ) {
+    edges {
+      node {
+        ...BaseProduct
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+fragment Image on Image {
+  url
+  alt
+}
