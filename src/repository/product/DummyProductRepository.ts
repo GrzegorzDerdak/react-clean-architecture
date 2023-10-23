@@ -1,4 +1,3 @@
-import { injectable } from "inversify";
 import { Product } from "@/entities/Product";
 import { Repository } from "@/repository/types";
 import { DummyJsonProductParser } from "@/repository/product/parsers";
@@ -21,8 +20,7 @@ export type DummyJsonResponse = {
   products?: DummyJsonProduct[];
 };
 
-@injectable()
-export class DummyProductRepository implements Repository<Product> {
+export const DummyProductRepository: Repository<Product> = {
   async getAll(): Promise<Product[] | null> {
     const response = await fetch("https://dummyjson.com/products");
     const body = (await response.json()) as DummyJsonResponse;
@@ -32,5 +30,5 @@ export class DummyProductRepository implements Repository<Product> {
     }
 
     return body.products.map(DummyJsonProductParser);
-  }
-}
+  },
+};

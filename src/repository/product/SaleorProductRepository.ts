@@ -1,5 +1,4 @@
 import { getClient } from "@/graphql/client";
-import { injectable } from "inversify";
 
 import {
   ProductsDocument,
@@ -11,8 +10,7 @@ import { Product } from "@/entities/Product";
 import { SaleorProductParser } from "./parsers";
 import { Repository } from "../types";
 
-@injectable()
-export class SaleorProductRepository implements Repository<Product> {
+export const SaleorProductRepository: Repository<Product> = {
   async getAll(params: ProductsQueryVariables): Promise<Product[] | null> {
     const client = getClient();
     const { data } = await client.query<ProductsQuery, ProductsQueryVariables>(
@@ -25,5 +23,5 @@ export class SaleorProductRepository implements Repository<Product> {
     }
 
     return data.products.edges.map(({ node }) => SaleorProductParser(node));
-  }
-}
+  },
+};

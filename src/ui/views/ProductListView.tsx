@@ -1,8 +1,8 @@
 import { ProductCard } from "@/ui/components/ProductCard";
-import { useRepository } from "@/repository/useRepository";
+import { useRepository } from "@/ui/hooks/useRepository";
 
 export const ProductListView = async () => {
-  const { getAll } = useRepository("PRODUCT_REPOSITORY");
+  const { getAll } = useRepository("PRODUCT");
   const products = await getAll({ channel: "ch-chf" });
 
   return (

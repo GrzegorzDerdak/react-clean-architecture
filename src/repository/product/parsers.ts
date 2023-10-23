@@ -14,6 +14,10 @@ export const SaleorProductParser: ProductParser<BaseProductFragment> = (
   slug: product.slug,
   createdAt: product.created,
   description: product.description,
+  price: {
+    currency: "USD",
+    amount: 21.37,
+  },
   image: {
     alt: product.thumbnail?.alt ?? "",
     url: product.thumbnail?.url ?? "",
@@ -28,6 +32,10 @@ export const DummyJsonProductParser: ProductParser<DummyJsonProduct> = (
   slug: product.title.toLowerCase().replace(" ", "-"),
   createdAt: "",
   description: product.description,
+  price: {
+    currency: "USD",
+    amount: Number(product.price),
+  },
   image: {
     alt: product.title,
     url: product.thumbnail,

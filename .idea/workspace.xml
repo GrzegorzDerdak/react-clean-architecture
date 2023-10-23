@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41cd613c-d4dd-4ad3-978c-97fe9103d644" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/product/DummyProductRepository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/product/DummyProductRepository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/product/parsers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/product/parsers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +55,11 @@
       <recent name="$PROJECT_DIR$/src/components/containers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui/components" />
+      <recent name="$PROJECT_DIR$/src/ui/hooks" />
       <recent name="$PROJECT_DIR$/src/repository" />
       <recent name="$PROJECT_DIR$/src/repository/product" />
       <recent name="$PROJECT_DIR$/src/hooks" />
-      <recent name="$PROJECT_DIR$/src/ui" />
-      <recent name="$PROJECT_DIR$/src/ui/components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -72,7 +73,7 @@
       <workItem from="1697709798636" duration="3883000" />
       <workItem from="1697793897482" duration="3310000" />
       <workItem from="1697797319080" duration="22578000" />
-      <workItem from="1697975930760" duration="8540000" />
+      <workItem from="1697975930760" duration="12667000" />
     </task>
     <servers />
   </component>
