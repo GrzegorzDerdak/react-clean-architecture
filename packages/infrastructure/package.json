@@ -1,0 +1,6 @@
+{
+  "name": "@ca/infrastructure",
+  "dependencies": {
+    "@ca/domain": "workspace:*"
+  }
+}
